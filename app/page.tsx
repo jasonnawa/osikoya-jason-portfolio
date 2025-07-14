@@ -44,6 +44,9 @@ const Home = () => {
             I build Scalable Backend Systems, Engaging User Interfaces,
             AI Assistants & Open source packages. Creator of{" "}
             <span className="flex items-center gap-x-3 flex-wrap">
+              <ColoredLink href="https://github.com/jasonnawa/Event-Driven-Market-Data-Stream-Processor">
+                Market Data Stream Processor
+              </ColoredLink>
               <ColoredLink href="https://www.npmjs.com/package/tcp-kvdb">
                 TCP-KVDB
               </ColoredLink>

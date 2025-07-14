@@ -19,6 +19,14 @@ const Projects = () => {
 
   const projects = [
     {
+      name: "Event Driven Market Data Stream Processor",
+      tag: "Backend",
+      description:
+        "Real-time stock data processing pipeline using NestJS, Redis, and an event-driven architecture to ingest and simulate live market tick data.",
+      languages: ["Redis", "Typescript", "Nest.js"],
+      url: "https://github.com/jasonnawa/Event-Driven-Market-Data-Stream-Processor",
+    },
+    {
       name: "TCP-Based Key-Value Database",
       tag: "Package",
       description:
