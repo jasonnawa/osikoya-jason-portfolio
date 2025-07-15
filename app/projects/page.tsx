@@ -19,8 +19,15 @@ const Projects = () => {
 
   const projects = [
     {
+      name: 'Real-Time Stock Data Visualizer',
+      tag:'Web App',
+      description: 'A responsive client-side application for visualizing real-time stock price data. Users can monitor live price movements and subscribe to specific stocks for alerts.',
+      languages: ['Next.js', 'Shadcn/ui', 'Recharts', 'WebSockets'],
+      url: 'https://market-data-stream-client.vercel.app'
+    },
+    {
       name: "Event Driven Market Data Stream Processor",
-      tag: "Backend",
+      tag: "Backend/API",
       description:
         "Real-time stock data processing pipeline using NestJS, Redis, and an event-driven architecture to ingest and simulate live market tick data.",
       languages: ["Redis", "Typescript", "Nest.js"],
