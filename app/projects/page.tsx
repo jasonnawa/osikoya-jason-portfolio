@@ -20,9 +20,9 @@ const Projects = () => {
   const projects = [
     {
       name: 'Real-Time Stock Data Visualizer',
-      tag:'Web App',
+      tag: 'Web App',
       description: 'A responsive client-side application for visualizing real-time stock price data. Users can monitor live price movements and subscribe to specific stocks for alerts.',
-      languages: ['Next.js', 'Shadcn/ui', 'Recharts', 'WebSockets'],
+      languages: ['Next.js', 'Shadcn/ui', 'Tailwind', 'Recharts', 'WebSockets'],
       url: 'https://market-data-stream-client.vercel.app'
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       tag: "Backend/API",
       description:
         "Real-time stock data processing pipeline using NestJS, Redis, and an event-driven architecture to ingest and simulate live market tick data.",
-      languages: ["Redis", "Typescript", "Nest.js"],
+      languages: ["Redis", "Typescript", "Nest.js", "MongoDB"],
       url: "https://github.com/jasonnawa/Event-Driven-Market-Data-Stream-Processor",
     },
     {
@@ -42,12 +42,19 @@ const Projects = () => {
       url: "https://www.npmjs.com/package/tcp-kvdb",
     },
     {
+      "name": "Faux Wallet Service",
+      "tag": "Backend/API",
+      "description": "A mock wallet microservice built with NestJS and Knex.js, supporting user wallet creation, funding, withdrawal, and transfer operations with faux authentication and external blacklist validation using Lendsqr's Adjutor API.",
+      "languages": ["TypeScript", "NestJS", "Knex", "MySQL","Jest", "ERD"],
+      "url": "https://github.com/jasonnawa/faux-wallet-service"
+    },
+    {
       name: "SaaS LMS",
       tag: "Web App",
       description:
         "A Learning Management System (LMS) with dashboards, assessments, and async course creation for instructors and learners.",
-      languages: ["Python", "Django", "JavaScript", "HTML", "CSS"],
-      url: "https://jasonosikoya.pythonanywhere.com",
+      languages: ["Python", "Django", "JavaScript", "HTML", "CSS", "MySQLite"],
+      url: "https://github.com/jasonnawa/electronLMS",
     },
     {
       name: "Entrepreneurial Admin Dashboard",

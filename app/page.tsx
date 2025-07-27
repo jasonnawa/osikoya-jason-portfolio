@@ -53,6 +53,9 @@ const Home = () => {
               <ColoredLink href="https://www.npmjs.com/package/tcp-kvdb">
                 TCP-KVDB
               </ColoredLink>
+              <ColoredLink href="https://github.com/jasonnawa/demo-credit-wallet-service">
+                Faux Wallet Service
+              </ColoredLink>
               <ColoredLink href="https://github.com/jasonnawa/electronLMS">
                 Electron LMS
               </ColoredLink>
