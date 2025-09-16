@@ -26,6 +26,14 @@ const Projects = () => {
       url: 'https://market-data-stream-client.vercel.app'
     },
     {
+      name: "Trading Performance Analytics System",
+      tag: "Backend/API",
+      description:
+        "Django-powered trading journal that lets users log trades, calculate PnL, and track performance with analytics and visualizations.",
+      languages: ["Python", "Django", "DRF", "MySQL"],
+      url: "https://github.com/jasonnawa/trading-journal",
+    },
+    {
       name: "Event Driven Market Data Stream Processor",
       tag: "Backend/API",
       description:
@@ -45,7 +53,7 @@ const Projects = () => {
       "name": "Faux Wallet Service",
       "tag": "Backend/API",
       "description": "A mock wallet microservice built with NestJS and Knex.js, supporting user wallet creation, funding, withdrawal, and transfer operations with faux authentication and external blacklist validation using Lendsqr's Adjutor API.",
-      "languages": ["TypeScript", "NestJS", "Knex", "MySQL","Jest", "ERD"],
+      "languages": ["TypeScript", "NestJS", "Knex", "MySQL", "Jest", "ERD"],
       "url": "https://github.com/jasonnawa/faux-wallet-service"
     },
     {

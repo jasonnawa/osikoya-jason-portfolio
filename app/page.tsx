@@ -47,6 +47,9 @@ const Home = () => {
               <ColoredLink href="https://market-data-stream-client.vercel.app">
                 Real-Time Stock Data Visualizer
               </ColoredLink>
+              <ColoredLink href="https://github.com/jasonnawa/trading-journal">
+                Trading Performance Analytics API
+              </ColoredLink>
               <ColoredLink href="https://github.com/jasonnawa/Event-Driven-Market-Data-Stream-Processor">
                 Market Data Stream Processor
               </ColoredLink>
