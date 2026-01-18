@@ -19,11 +19,27 @@ const Projects = () => {
 
   const projects = [
     {
-      name: 'Real-Time Stock Data Visualizer',
-      tag: 'Web App',
-      description: 'A responsive client-side application for visualizing real-time stock price data. Users can monitor live price movements and subscribe to specific stocks for alerts.',
-      languages: ['Next.js', 'Shadcn/ui', 'Tailwind', 'Recharts', 'WebSockets'],
-      url: 'https://market-data-stream-client.vercel.app'
+      name: "Real-Time Stock Data Visualizer",
+      tag: "Web App",
+      description:
+        "A responsive client-side application for visualizing real-time stock price data. Users can monitor live price movements and subscribe to specific stocks for alerts.",
+      languages: ["Next.js", "Shadcn/ui", "Tailwind", "Recharts", "WebSockets"],
+      url: "https://market-data-stream-client.vercel.app",
+    },
+    {
+      name: "AI Compliance Document Analyzer",
+      tag: "Backend/API",
+      description:
+        "An AI-powered backend system for analyzing and comparing compliance documents. It extracts regulatory requirements, normalizes them, evaluates compliance using LLMs, and produces detailed compliance scores with evidence and rationale.",
+      languages: [
+        "Node.js",
+        "TypeScript",
+        "Express.js",
+        "OpenAI API",
+        "Vector Embeddings",
+        "Cosine Similarity",
+      ],
+      url: "https://github.com/jasonnawa/mineguard-ai-server",
     },
     {
       name: "Trading Performance Analytics System",
@@ -50,11 +66,12 @@ const Projects = () => {
       url: "https://www.npmjs.com/package/tcp-kvdb",
     },
     {
-      "name": "Faux Wallet Service",
-      "tag": "Backend/API",
-      "description": "A mock wallet microservice built with NestJS and Knex.js, supporting user wallet creation, funding, withdrawal, and transfer operations with faux authentication and external blacklist validation using Lendsqr's Adjutor API.",
-      "languages": ["TypeScript", "NestJS", "Knex", "MySQL", "Jest", "ERD"],
-      "url": "https://github.com/jasonnawa/faux-wallet-service"
+      name: "Faux Wallet Service",
+      tag: "Backend/API",
+      description:
+        "A mock wallet microservice built with NestJS and Knex.js, supporting user wallet creation, funding, withdrawal, and transfer operations with faux authentication and external blacklist validation using Lendsqr's Adjutor API.",
+      languages: ["TypeScript", "NestJS", "Knex", "MySQL", "Jest", "ERD"],
+      url: "https://github.com/jasonnawa/faux-wallet-service",
     },
     {
       name: "SaaS LMS",
@@ -69,10 +86,15 @@ const Projects = () => {
       tag: "Web App",
       description:
         "A full-featured dashboard for entrepreneurs to manage contacts, track deals, and visualize business data.",
-      languages: ["Next.js", "JavaScript", "NextAuth.js", "ChakraUI", "MongoDB"],
+      languages: [
+        "Next.js",
+        "JavaScript",
+        "NextAuth.js",
+        "ChakraUI",
+        "MongoDB",
+      ],
       url: "https://github.com/jasonnawa/AdminDashboard-NEXTJS14",
-    }
-
+    },
   ];
 
   const tags = [
@@ -92,7 +114,7 @@ const Projects = () => {
     const matchesTag = selectedTag === "All" || project.tag === selectedTag;
     const matchesSearch = searchQuery
       ? project.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      project.description.toLowerCase().includes(searchQuery.toLowerCase())
+        project.description.toLowerCase().includes(searchQuery.toLowerCase())
       : true;
     return matchesTag && matchesSearch;
   });
@@ -130,8 +152,9 @@ const Projects = () => {
         {tags.map((tag) => (
           <button
             key={tag}
-            className={`px-4 py-2 m-2 text-sm rounded-full ${selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
-              }`}
+            className={`px-4 py-2 m-2 text-sm rounded-full ${
+              selectedTag === tag ? "bg-black text-white" : "bg-gray-200"
+            }`}
             onClick={() => setSelectedTag(tag)}
           >
             {tag}

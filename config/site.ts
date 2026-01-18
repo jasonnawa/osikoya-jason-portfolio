@@ -5,5 +5,5 @@ export const siteConfig = {
   description: "About Jason Osikoya - CS, Software Engineer",
   keywords:
     "jason, jason osikoya, software engineer",
-  image: "localhost/jason.jpg",
+  image: "https://osikoya-jason-portfolio.vercel.app/jason.jpg",
 };
